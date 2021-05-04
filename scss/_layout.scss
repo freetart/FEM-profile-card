@@ -3,6 +3,8 @@
   @include sectionSpacing;
   @include flexCenter;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 // bg pattern
