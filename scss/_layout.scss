@@ -1,5 +1,36 @@
+// card container
 .profile-card-container {
   @include sectionSpacing;
   @include flexCenter;
   height: 100vh;
+}
+
+// bg pattern
+
+.bg-pattern-top {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  z-index: -1;
+  width: 50%;
+
+  @media (max-width: 800px) {
+    top: -10%;
+    left: -10%;
+    width: 80%;
+  }
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: -20%;
+  right: -20%;
+  width: 50%;
+
+  @media (max-width: 800px) {
+    bottom: -10%;
+    right: -10%;
+    width: 80%;
+  }
 }
