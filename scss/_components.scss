@@ -1,7 +1,6 @@
 .profile-card {
   background-color: color(white);
   width: 40rem;
-  border-radius: 1rem;
   box-shadow: 0.1rem 0.7rem 3rem #3d3333;
 
   &-top {
@@ -12,8 +11,6 @@
     background: url("../images/bg-pattern-card.svg");
     height: 15rem;
     width: 100%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
   }
 
   &-img {
