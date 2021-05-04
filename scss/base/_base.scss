@@ -19,6 +19,13 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    color(darkTeal),
+    color(lightTeal)
+  );
+  height: 100vh;
+  width: 100vw;
 }
 
 img {

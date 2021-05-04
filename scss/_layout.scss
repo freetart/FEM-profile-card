@@ -1,0 +1,5 @@
+.profile-card-container {
+  @include sectionSpacing;
+  @include flexCenter;
+  height: 100vh;
+}

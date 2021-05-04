@@ -1,0 +1,72 @@
+.profile-card {
+  background-color: color(white);
+  width: 40rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.7rem 3rem #3d3333;
+
+  &-top {
+    text-align: center;
+  }
+
+  &-bg {
+    background: url("../images/bg-pattern-card.svg");
+    height: 15rem;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  &-img {
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.3rem solid color(white);
+    transform: translateY(-50%);
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px);
+  }
+
+  &-name {
+    @include headingStyles;
+    font-size: size(lg);
+  }
+
+  &-age {
+    @include textStyles;
+    font-size: size(lg);
+    color: color(gray);
+  }
+
+  &-city {
+    @include textStyles;
+    font-size: size(sm);
+    transform: translateY(-20px);
+    color: color(gray);
+  }
+
+  &-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: 0.1rem solid lighten(color(gray), 30%);
+    padding: 2rem;
+
+    .stat {
+      &-number {
+        @include headingStyles;
+        font-size: size(sm);
+      }
+
+      &-title {
+        @include textStyles;
+        font-size: size(xxs);
+        color: color(gray);
+      }
+    }
+  }
+}
