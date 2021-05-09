@@ -8,7 +8,6 @@
 }
 
 // bg pattern
-
 .bg-pattern-top {
   position: absolute;
   top: -20%;
@@ -34,5 +33,36 @@
     bottom: -10%;
     right: -10%;
     width: 80%;
+  }
+}
+
+// footer
+.footer {
+  position: absolute;
+  text-align: center;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: color(white);
+
+  h3 {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+
+  a {
+    @include headingStyles;
+    color: color(black);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 5rem;
   }
 }
